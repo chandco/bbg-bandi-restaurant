@@ -71,7 +71,7 @@
 
 							?>
 
-			<div id="content" class='max-central'>
+			<div id="content">
 
 				<div id="inner-content" class="wrap cf">
 

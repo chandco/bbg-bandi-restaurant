@@ -3,8 +3,12 @@ define(['jquery', 'vendor/steady', 'plugins/jquery-scrollto', 'plugins/isonscree
 
 
 
+
 if (screen.width <= 968) {
    // console.log("mobile...exiting");
+    return;
+  } else {
+    
     return;
   }
   

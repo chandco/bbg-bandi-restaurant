@@ -90,7 +90,7 @@ function child_theme_shortcode_feature_box($atts, $content = false) {
 
 
 
-remove_filter("the_content", "WrapStuff", 0);
+remove_filter("the_content", "WrapStuff");
 add_filter("the_content", "BBG_WrapStuff", 0);
 
 
@@ -128,9 +128,9 @@ function BBG_WrapStuff( $post ) {
 
 			// flag
 			if (substr($match, 0, 1) == '#' || substr(strtolower($match), 0, 3) == 'rgb') {
-				$newpost .= "<div class='section' style='background:" . $match . ";'>"; 
+				$newpost .= "<div class='section full-width-background' style='background:" . $match . ";'>"; 
 			} else {
-				$newpost .= "<div class='section " . $match . "'>"; 
+				$newpost .= "<div class='section full-width-background " . $match . "'>"; 
 			}
 			
 			
