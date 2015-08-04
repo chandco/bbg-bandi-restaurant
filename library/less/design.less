@@ -36,11 +36,56 @@ hr {
   }
 }
 
+.blog, .archive, .single-post {
+  #container {
+    padding-top: 140px;
+  }
+}
+
 #carousel {
   position: relative;
-  margin-top: -3em;
-  // margin-bottom: @header-height-px;
+  // margin-top: -3em;
+  margin-bottom: 1em;
 }
+
+
+#blog-sidebar {
+  top: -60px;
+  padding-top: 60px;
+  
+  padding-left: 10px;
+  
+  background: @body-background;
+
+  &:before {
+    position: fixed;
+    height: 100%;
+    
+    // border-left: 2px solid fade(black, 20%);
+    box-shadow: -5px 0 10px -4px rgba(0, 0, 0, 0.29);
+    z-index: -1;
+    width: 40px;
+    background: @body-background;
+
+    top: 0;
+    @pseudo-offset: ( ( @max-central-width * (100% - @global-sidebar-width - @global-sidebar-margin) ) / 100 ) + 20px;
+    
+    
+    left: ~"calc( ((100vw - @{max-central-width} ) / 2) + @{pseudo-offset})";
+
+    @media screen and (max-width: @max-central-width) {
+      left: (100% - @global-sidebar-width - (@global-sidebar-margin / 2));
+    }
+
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+    content: "";
+    
+  }
+
+}
+
 
 .admin-bar {
   .header {
@@ -170,6 +215,10 @@ body {
 
 
 
+
+body {
+  .colours-bg();
+}
 
 
 .page #inner-content {

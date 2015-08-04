@@ -18,7 +18,7 @@
 
 
 .widget {
-  width: 50%;
+  
   @media screen and (max-width: @tablet-break) {
     width: 100%;
   }
@@ -27,17 +27,13 @@
 
 
 // animation
-#logo {
-  transform-origin: top center;
-  transition: transform .5s ease;
-  transform: scale(0.8, 0.8) !important;
-}
+
 
 
 .header #inner-header #logo {
   
   background: @header-logo-tab-bg;
-  height: 220%;
+  height: @header-logo-height;
   top: 0;
   
   //box-shadow: 1px 1px 1px 0px RGBA(0,0,0,0.5);
@@ -68,10 +64,7 @@
       width: 69%;
     }
 
-    &:before { 
-      bottom: -8px;
-        transform: skewY(-9deg);
-    }
+    
   }
 
   
@@ -555,9 +548,12 @@ nav[role="navigation"] {
   }
 }
 
-.carousel + .custom-subheading {
+#carousel + .custom-subheading {
   position: relative;
   .max-central;
+  color: @white;
+
+  
 
   margin-top: -250px;
   height: 250px;

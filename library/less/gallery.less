@@ -15,11 +15,10 @@
   padding: 0.25em;
   /* border-top: 1px solid #bbe3e8; */
   /* border-bottom: 1px solid #bbe3e8; */
-  background: fade(black, 10%);
   margin: 2em auto;
 
   &:hover {
-    figure {
+    figure a img {
       filter: grayscale(100%);
       opacity: 0.5;
     }
@@ -42,11 +41,13 @@
     z-index: 2; // why was this 5555?
 
     figcaption {
-      margin-bottom: 10px;
-      line-height: 1;
-      font-size: .7em;
-      margin-top: 10px;
-      display: none; // utgh
+      position: absolute;
+      bottom: 1.5em;
+      right: 1.5em;
+      color: #fff;
+      text-shadow: 0 0 5px #000;
+      font-family: @h-font;
+      
     }
 
     @media screen and (max-width:700px) {
@@ -65,10 +66,11 @@
       height: auto;
       display: block;
       margin: 0;
+      transition: all 0.3s ease;
     }
     
     transition: all 0.3s ease;
-    &:hover {
+    &:hover a img {
       filter: none;
       
       opacity: 1;

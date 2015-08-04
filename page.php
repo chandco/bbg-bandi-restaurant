@@ -30,7 +30,7 @@
 								$atts = 
 								array(
 									'tag' => implode(',', $term_array),
-									'fill' => false
+									'fill' => true
 								);
 
 								?>
@@ -62,6 +62,7 @@
 
 
 								$parts = explode("|", trim($custom_content));
+							
 								echo "<div class='custom-subheading'>";
 								foreach ($parts as $part) {
 									echo "<span>" . $part . "</span>";

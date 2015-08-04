@@ -33,15 +33,15 @@
 @global-sidebar-margin: 4%;
 
 
-@header-logo-width: 15%; // smaller for this site - longer logos may need more.
-
+@header-logo-width: 10%; // smaller for this site - longer logos may need more.
+@header-logo-height: 180%;
 // COLOURS
 @this-website: ~'http://ornc.local'; // this will have to change 
 
 // We use generic colour names to imply something so set them here.  
-@body-font : 'Avenir Next W01';;//FG Jasmine W00 Regular', Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+@body-font : 'Raleway', arial, sans-serif;
+@body-font: 'Avenir Next W01';;//FG Jasmine W00 Regular', Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
 @h-font : 'Baskerville Handcut W01';//'Source Sans Pro', sans-serif;
-
 
 
 .h-font() {
@@ -71,7 +71,7 @@
 @emphasis : @darkblue;
 @emphasis-text: @white; // if @emphasis was a background etc.
 
-@link-color : @green;
+@link-color : #D28CB8;
 
 // general colour as a default - this just sets the body tag
 @default-text : @white;
@@ -87,8 +87,9 @@
 @header-logo-tab-bg: @blue;
 
 // sidebars
-@widget-background: fade( @lightgrey, 20% );
-@widget-color: @black;
+@widget-background: transparent;
+@widget-color: @white;
+@widget-title: @white;
 
 //@lighter-grey; @white
 @nav-link-color: @purple;
@@ -127,8 +128,8 @@
 @slide-background: @darkgrey;
 
 
-@carousel-max-height: 700px;
-@carousel-height: 700px; 
+@carousel-max-height: 600px;
+@carousel-height: 600px; 
 
 
 
@@ -145,7 +146,7 @@
 @cta-sidebar-width : 15%;
 @mobile-cta-height : 100px;
 
-@max-central-width: 1100px;
+@max-central-width: 1200px;
 @max-central-outer-width: 1200px;
 @tablet-break : 60em;
 
@@ -223,7 +224,7 @@
         
 .colours-bg() {
 
-  .color-bg-mixin(@white, @green, 0);
+  .color-bg-mixin(@white, @purple, 0);
 
   .for(@colors); .-each(@name) {
     &.@{name} {
