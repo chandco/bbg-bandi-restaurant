@@ -4,11 +4,9 @@
 @darkgrey : RGB(51,51,51);
 
 
-
-
-
-@import "colours";
-@colors: grey,green,blue,lightgreen,purple,black,white;
+@darkblue : #fff;
+@lightblue : #555;
+@off-lightblue : #444;
 
 
 @darkgreen: @green;
@@ -18,9 +16,11 @@
 
 
 
-@darkblue : #fff;
-@lightblue : #555;
-@off-lightblue : #444;
+@import "colours";
+@colors: grey,green,blue,lightblue,lightgreen,purple,black,white;
+
+
+
 
 
 
@@ -40,7 +40,7 @@
 
 // We use generic colour names to imply something so set them here.  
 @body-font : 'Raleway', arial, sans-serif;
-@body-font: 'Avenir Next W01';;//FG Jasmine W00 Regular', Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+// @body-font: 'Avenir Next W01';;//FG Jasmine W00 Regular', Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
 @h-font : 'Baskerville Handcut W01';//'Source Sans Pro', sans-serif;
 
 
@@ -103,10 +103,10 @@
 
 @nav-font: @body-font;
 
-@nav-secondary-highlight : lighten(@black, 15%);
-@nav-secondary-highlight-text : @white;
+@nav-secondary-highlight : @white;
+@nav-secondary-highlight-text : @purple;
 
-@nav-submenu-background : lighten(@black, 35%);
+@nav-submenu-background : @white;
 @nav-submenu-text: @white;
 @nav-submenu-text-hover : @black;
 

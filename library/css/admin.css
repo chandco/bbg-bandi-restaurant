@@ -1831,7 +1831,6 @@
   text-decoration: none;
   position: relative;
   width: 100%;
-  background: #ffffff;
   border-radius: 2px;
   -webkit-transition: background 0.4s ease;
           transition: background 0.4s ease;
@@ -1902,7 +1901,6 @@
           backface-visibility: hidden;
 }
 .feature h2 {
-  bottom: 0;
   width: 100%;
   left: 0;
   z-index: 2;
@@ -1920,6 +1918,7 @@
   font-size: 0.9em;
   color: inherit;
   height: auto;
+  height: 100%;
   z-index: 2;
   position: absolute;
   top: 0;
@@ -1927,22 +1926,22 @@
 }
 .feature .content h2 {
   position: absolute;
-  top: 2em;
+  bottom: 20%;
   left: 0;
   background: rgba(102, 102, 102, 0.7);
   background: rgba(119, 40, 90, 0.9);
   width: auto;
-  bottom: auto;
+  top: auto;
   padding: 0.5em;
-  font-size: 1.2em;
+  font-size: 1.5em;
   color: #ffffff;
-  font-family: 'Avenir Next W01';
+  font-family: 'Raleway', arial, sans-serif;
 }
 .feature .copy {
   color: #ffffff;
   background: rgba(119, 40, 90, 0.6);
   position: absolute;
-  top: 5.5em;
+  bottom: 15%;
   width: auto;
   max-width: 70%;
   left: 10%;
@@ -2178,6 +2177,15 @@
   background: #ffffff;
   color: #66739f !important;
 }
+.admin_page_feature-box-edit #mce-feature-box-form #colours li.lightblue {
+  background: #9fabd4;
+  color: #000000;
+}
+.admin_page_feature-box-edit #mce-feature-box-form #colours li.lightblue .cta-inline,
+.admin_page_feature-box-edit #mce-feature-box-form #colours li.lightblue .cta {
+  background: #000000;
+  color: #9fabd4 !important;
+}
 .admin_page_feature-box-edit #mce-feature-box-form #colours li.lightgreen {
   background: #6b9e39;
   color: #000000;
@@ -2300,6 +2308,15 @@
 .admin_page_feature-box-edit #mce-feature-box-form .feature-box.blue .cta {
   background: #ffffff;
   color: #66739f !important;
+}
+.admin_page_feature-box-edit #mce-feature-box-form .feature-box.lightblue {
+  background: #9fabd4;
+  color: #000000;
+}
+.admin_page_feature-box-edit #mce-feature-box-form .feature-box.lightblue .cta-inline,
+.admin_page_feature-box-edit #mce-feature-box-form .feature-box.lightblue .cta {
+  background: #000000;
+  color: #9fabd4 !important;
 }
 .admin_page_feature-box-edit #mce-feature-box-form .feature-box.lightgreen {
   background: #6b9e39;
@@ -2428,7 +2445,6 @@
   text-decoration: none;
   position: relative;
   width: 100%;
-  background: #ffffff;
   border-radius: 2px;
   -webkit-transition: background 0.4s ease;
           transition: background 0.4s ease;
@@ -2499,7 +2515,6 @@
           backface-visibility: hidden;
 }
 .admin_page_columns-box-edit #wpcontent .feature h2 {
-  bottom: 0;
   width: 100%;
   left: 0;
   z-index: 2;
@@ -2517,6 +2532,7 @@
   font-size: 0.9em;
   color: inherit;
   height: auto;
+  height: 100%;
   z-index: 2;
   position: absolute;
   top: 0;
@@ -2524,22 +2540,22 @@
 }
 .admin_page_columns-box-edit #wpcontent .feature .content h2 {
   position: absolute;
-  top: 2em;
+  bottom: 20%;
   left: 0;
   background: rgba(102, 102, 102, 0.7);
   background: rgba(119, 40, 90, 0.9);
   width: auto;
-  bottom: auto;
+  top: auto;
   padding: 0.5em;
-  font-size: 1.2em;
+  font-size: 1.5em;
   color: #ffffff;
-  font-family: 'Avenir Next W01';
+  font-family: 'Raleway', arial, sans-serif;
 }
 .admin_page_columns-box-edit #wpcontent .feature .copy {
   color: #ffffff;
   background: rgba(119, 40, 90, 0.6);
   position: absolute;
-  top: 5.5em;
+  bottom: 15%;
   width: auto;
   max-width: 70%;
   left: 10%;

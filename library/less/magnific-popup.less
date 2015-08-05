@@ -4,14 +4,15 @@ a[rel="gallery[lightbox]"] {
   display: inline-block;
   width: 100%;
   height: auto;
-  overflow: hidden;
+ // overflow: hidden;
+ margin-bottom: 0;
   -webkit-backface-visibility: hidden;
   img {
     display: block;
     transition:transform 0.4s ease;
   }
   &::after {
-    content: @fa-var-search-plus;
+   // content: @fa-var-search-plus;
     .fa();
    
     position: absolute;
@@ -31,14 +32,14 @@ a[rel="gallery[lightbox]"] {
     width: 90%;
     left: 3%;
     padding-left: 1%;
-    transform-origin: left top;
+    transform-origin: center center;
 
     
   }
 
   &:hover {
     img {
-      transform:scale(1.1,1.1);
+      transform:scale(1.02,1.02);
     }
   }
 

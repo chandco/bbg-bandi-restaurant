@@ -4,7 +4,6 @@
  */
 /* FONT PATH
  * -------------------------- */
-@import url(http://fast.fonts.net/cssapi/aa206c52-0bd7-4c23-bef2-d7fc3da68194.css);
 @font-face {
   font-family: 'FontAwesome';
   src: url('//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0');
@@ -1832,7 +1831,6 @@
   text-decoration: none;
   position: relative;
   width: 100%;
-  background: #ffffff;
   border-radius: 2px;
   -webkit-transition: background 0.4s ease;
           transition: background 0.4s ease;
@@ -1903,7 +1901,6 @@
           backface-visibility: hidden;
 }
 .feature h2 {
-  bottom: 0;
   width: 100%;
   left: 0;
   z-index: 2;
@@ -1921,6 +1918,7 @@
   font-size: 0.9em;
   color: inherit;
   height: auto;
+  height: 100%;
   z-index: 2;
   position: absolute;
   top: 0;
@@ -1928,22 +1926,22 @@
 }
 .feature .content h2 {
   position: absolute;
-  top: 2em;
+  bottom: 20%;
   left: 0;
   background: rgba(102, 102, 102, 0.7);
   background: rgba(119, 40, 90, 0.9);
   width: auto;
-  bottom: auto;
+  top: auto;
   padding: 0.5em;
-  font-size: 1.2em;
+  font-size: 1.5em;
   color: #ffffff;
-  font-family: 'Avenir Next W01';
+  font-family: 'Raleway', arial, sans-serif;
 }
 .feature .copy {
   color: #ffffff;
   background: rgba(119, 40, 90, 0.6);
   position: absolute;
-  top: 5.5em;
+  bottom: 15%;
   width: auto;
   max-width: 70%;
   left: 10%;
@@ -2345,9 +2343,7 @@ body#tinymce.wp-editor {
   font-size: 1em;
   line-height: 1.2em;
   -webkit-font-smoothing: antialiased;
-  background: #77285a;
-  color: #ffffff;
-  font-family: 'Avenir Next W01';
+  font-family: 'Raleway', arial, sans-serif;
   /* normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
   /* ==========================================================================
      HTML5 display definitions
@@ -2888,7 +2884,7 @@ body#tinymce.wp-editor h4 {
 }
 body#tinymce.wp-editor h5,
 body#tinymce.wp-editor h6 {
-  font-family: 'Avenir Next W01';
+  font-family: 'Raleway', arial, sans-serif;
   font-weight: bold;
 }
 body#tinymce.wp-editor h3 {

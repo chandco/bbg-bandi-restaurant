@@ -180,6 +180,25 @@ body {
 }
 
 
+.col-smart .wp-caption {
+  width: 100% !important;
+  padding-bottom: 55% !important;
+
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: auto;
+  }
+
+  .wp-caption-dd {
+    margin-bottom: 0;
+  }
+}
+
 
 .full-width-background-maker(@color : RGBA(0,0,0,0.5)) {
 	position: relative;
@@ -204,7 +223,7 @@ body {
 	width: 100%;
   
 
-  padding-top: @header-height-px;
+  padding-top: 1em;
 
  
 
@@ -212,14 +231,27 @@ body {
   
 }
 
+p:empty + p {
+  margin-top: 1em;
+}
 
+p:empty {
+  display:none;
+}
 
+p:empty + .gallery {
+  margin-top: 0;
+}
 
 
 body {
   .colours-bg();
 }
 
+
+.page #inner-content .entry-content > .full-width-background:first-child {
+  margin-top: 0;
+}
 
 .page #inner-content {
 	 
@@ -234,9 +266,19 @@ body {
       padding: 2em 0;
       max-width: 100%;
 
+
+
       > * {
         .max-central;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
+
+
+
+
 
       @media screen and (max-width: @max-central-width) {
         width: 100%;
