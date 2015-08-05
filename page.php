@@ -76,7 +76,7 @@
 
 				<div id="inner-content" class="wrap cf">
 
-						
+				
 <?php get_template_part( 'content/page' ); ?>
 
 

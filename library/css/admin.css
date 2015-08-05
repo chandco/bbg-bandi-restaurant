@@ -1872,7 +1872,7 @@
   width: 100%;
   display: block;
   height: 0;
-  padding-bottom: 80%;
+  padding-bottom: 70%;
   position: relative;
   overflow: hidden;
   border-bottom: none !important;
@@ -1926,7 +1926,7 @@
 }
 .feature .content h2 {
   position: absolute;
-  bottom: 20%;
+  bottom: 24%;
   left: 0;
   background: rgba(102, 102, 102, 0.7);
   background: rgba(119, 40, 90, 0.9);
@@ -1941,7 +1941,7 @@
   color: #ffffff;
   background: rgba(119, 40, 90, 0.6);
   position: absolute;
-  bottom: 15%;
+  bottom: 20%;
   width: auto;
   max-width: 70%;
   left: 10%;
@@ -2486,7 +2486,7 @@
   width: 100%;
   display: block;
   height: 0;
-  padding-bottom: 80%;
+  padding-bottom: 70%;
   position: relative;
   overflow: hidden;
   border-bottom: none !important;
@@ -2540,7 +2540,7 @@
 }
 .admin_page_columns-box-edit #wpcontent .feature .content h2 {
   position: absolute;
-  bottom: 20%;
+  bottom: 24%;
   left: 0;
   background: rgba(102, 102, 102, 0.7);
   background: rgba(119, 40, 90, 0.9);
@@ -2555,7 +2555,7 @@
   color: #ffffff;
   background: rgba(119, 40, 90, 0.6);
   position: absolute;
-  bottom: 15%;
+  bottom: 20%;
   width: auto;
   max-width: 70%;
   left: 10%;
