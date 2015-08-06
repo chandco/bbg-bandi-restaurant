@@ -86,6 +86,9 @@
 				content: @carousel-next-fa-icon;
 		
 			}
+			@media screen and (max-width: @tablet-break) {
+				right: 30px;
+			}
 		}
 
 		.slick-prev {
@@ -94,6 +97,10 @@
 			text-align: left;
 			&:before {
 				content:  @carousel-prev-fa-icon;
+			}
+
+			@media screen and (max-width: @tablet-break) {
+				left: 30px;
 			}
 		}
 

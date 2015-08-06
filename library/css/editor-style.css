@@ -1812,7 +1812,10 @@
 }
 @media screen and (max-width: 1200px) {
   .central-column {
-    width: 96%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 }
 .max-central {
@@ -1824,7 +1827,10 @@
 }
 @media screen and (max-width: 1200px) {
   .max-central {
-    width: 96%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 }
 .feature {
@@ -1982,7 +1988,7 @@
       -ms-flex-preferred-size: 0;
           flex-basis: 0;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .row .col-smart,
   .cf_columns .col-smart,
   .cf-columns .col-smart {
@@ -1997,7 +2003,7 @@
       -ms-flex-positive: 2.12;
           flex-grow: 2.12;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .row,
   .cf_columns,
   .cf-columns {
@@ -2932,7 +2938,7 @@ body#tinymce.wp-editor .row .col-smart {
       -ms-flex-preferred-size: 0;
           flex-basis: 0;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   body#tinymce.wp-editor .row .col-smart {
     float: none;
   }
@@ -2943,7 +2949,7 @@ body#tinymce.wp-editor .row .col-smart.wider {
       -ms-flex-positive: 2.12;
           flex-grow: 2.12;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   body#tinymce.wp-editor .row {
     display: block;
   }

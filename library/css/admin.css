@@ -1812,7 +1812,10 @@
 }
 @media screen and (max-width: 1200px) {
   .central-column {
-    width: 96%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 }
 .max-central {
@@ -1824,7 +1827,10 @@
 }
 @media screen and (max-width: 1200px) {
   .max-central {
-    width: 96%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 }
 .feature {

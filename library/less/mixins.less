@@ -1,6 +1,22 @@
 /* LESS Document */
 
 
+.img-height-100() {
+  top: 0;
+  width: auto;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.img-width-100() {
+  left: 0;
+  height: auto;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 
 
 .fixedbg() {
@@ -145,7 +161,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
       position: relative;
 
       @media screen and (max-width: @max-central-width) {
-        width: 96%;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 2em;
+        padding-right: 2em;
       }
 }
 
