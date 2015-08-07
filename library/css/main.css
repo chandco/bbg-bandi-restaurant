@@ -5836,13 +5836,52 @@ a[rel="category tag"]:hover {
 .cycle-slideshow .slick-list .slick-track .slick-slide.panorama-tablet img,
 .cycle-slideshow .slick-list .slick-track .slick-slide.panorama-mobile img,
 .cycle-slideshow .slick-list .slick-track .slick-slide.panorama img {
-  top: 0;
-  width: auto;
-  height: 100%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  left: 0;
+  height: auto;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media screen and (max-width: 1400px) {
+  .cycle-slideshow .slick-list .slick-track .slick-slide.panorama-tablet img,
+  .cycle-slideshow .slick-list .slick-track .slick-slide.panorama-mobile img,
+  .cycle-slideshow .slick-list .slick-track .slick-slide.panorama img {
+    top: 0;
+    width: auto;
+    height: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 930px) {
+  .cycle-slideshow .slick-list .slick-track .slick-slide.panorama-tablet img,
+  .cycle-slideshow .slick-list .slick-track .slick-slide.panorama-mobile img,
+  .cycle-slideshow .slick-list .slick-track .slick-slide.panorama img {
+    left: 0;
+    height: auto;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+@media screen and (max-width: 750px) {
+  .cycle-slideshow .slick-list .slick-track .slick-slide.panorama-tablet img,
+  .cycle-slideshow .slick-list .slick-track .slick-slide.panorama-mobile img,
+  .cycle-slideshow .slick-list .slick-track .slick-slide.panorama img {
+    top: 0;
+    width: auto;
+    height: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 .cycle-slideshow {
   background: #333333;
