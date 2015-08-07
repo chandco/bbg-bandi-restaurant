@@ -121,7 +121,6 @@
 
 
 
-
 .archive, .blog {
 
 	.grid-feed {
@@ -259,6 +258,7 @@
 
 
 
+
 .shortcode-post-list {
 	width: 100%;
 
@@ -296,4 +296,22 @@
      margin-bottom: 2em;
     
   
+}
+
+.no-flexbox {
+	.shortcode-post-list {
+		display: block;
+		.post-preview {
+			float: left;
+			width: 24%;
+			margin: 0 1% 0 0;
+			height: 400px;
+
+		}
+
+		overflow: hidden;
+		
+
+
+	}
 }
