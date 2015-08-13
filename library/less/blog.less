@@ -113,7 +113,8 @@
 
 	.post-preview {
 		width: 48%; // assumes 4, might have to fix this for other parents
-		margin-bottom: 3em;
+		margin-bottom: 1.5em;
+		margin-top: 0;
 	}
 
 }
@@ -145,7 +146,7 @@
 		}
 
 		> .post-preview {
-			margin-bottom: 4em;
+			margin-bottom: 1.5em;
 		}
 
 
@@ -189,7 +190,7 @@
 .post-preview {
 	display: block;
 	background: white;
-	padding-bottom: 30px;
+	padding-bottom: 15px;
 
 	&:after {
 
@@ -222,12 +223,14 @@
 
 	h4 {
 		
-		padding: 1em;
+		padding: 0.5em 1em;
 		margin: 0;
 		background: @white;
 		z-index: 5;
 		position: relative;
 		color: inherit !important;
+
+		min-height: 62px;
 
 	}
 

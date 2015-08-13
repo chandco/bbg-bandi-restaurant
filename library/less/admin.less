@@ -5,6 +5,17 @@
 @import "mixins";
 @import "editor-style-mixins";
 
+.admin_page_columns-box-edit {
+	.column {
+		img {
+			max-width: 100%;
+			width: 100%;
+			height: auto;
+		}
+
+		min-width: 20%;
+	}
+}
 
 
 
@@ -479,6 +490,11 @@
 			&.extend {
 				flex-grow: 2;
 				flex-basis: 100%;
+
+				.col-control-extend:before {
+					content: "\f344 \f340";
+				}
+
 			}
 
 			button[class^='col-control-'] {
